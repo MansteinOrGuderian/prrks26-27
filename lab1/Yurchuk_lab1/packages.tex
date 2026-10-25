@@ -1,7 +1,7 @@
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 \setsansfont{Tahoma}
-\setmonofont{Comic Mono}
+\setmonofont{Roboto Mono}
 \usepackage[fontsize=12pt]{fontsize}
 \usepackage{microtype}
 \usepackage[english, ukrainian]{babel}
@@ -11,7 +11,7 @@
     right = 50pt,
     left = 50pt,
     footskip = 15pt,
-    %showframe
+    showframe
 ]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{algorithm}
@@ -49,5 +49,6 @@ bookmarks = true,
 \setminted[c]{
     style=colorful
 }
-\usepackage{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=none,autolang=other]{biblatex}
 \usepackage{csquotes}
+\usepackage{cleveref}
